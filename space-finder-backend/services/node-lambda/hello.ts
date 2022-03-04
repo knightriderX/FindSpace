@@ -13,7 +13,7 @@ async function handler(event: any, context: any) {
     console.log(event);
     return {
         statusCode: 200,
-        body: 'Here are your buckets:' + JSON.stringify(buckets.Buckets)
+        body: 'Here are your list of buckets:' + JSON.stringify(buckets.Buckets)
 
     }
 }
