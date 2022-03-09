@@ -16,7 +16,11 @@
                 "${relativeFile}"
             ],
             "env": {
-                "AWS_REGION": "us-east-1"
+                "AWS_REGION": "us-east-1",
+                "AWS_ACCESS_KEY_ID": "AKIAYVLWPZFGEQTRPHNN",
+                "AWS_SECRET_ACCESS_KEY": "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",
+                "TABLE_NAME": "SpacesTable",
+                "PRIMARY_KEY": "spaceId"
             }
         },
         // {

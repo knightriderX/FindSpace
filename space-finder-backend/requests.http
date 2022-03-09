@@ -1,4 +1,30 @@
-@endpoint = "https://dactv0m8i0.execute-api.us-east-1.amazonaws.com/prod/"
+@endpoint = https://dactv0m8i0.execute-api.us-east-1.amazonaws.com/prod/
 
-GET {{endpoint}}/hello
+GET {{endpoint}}/spaces
 ###
+
+GET {{endpoint}}/spaces?spaceId=ad099c86-e762-424b-8eba-ebe5c732cbd6
+###
+
+PUT {{endpoint}}/spaces?spaceId=ad099c86-e762-424b-8eba-ebe5c732cbd6
+Content-Type: application/json
+
+{
+    "location":"Updated location",
+    "name":"Best football team"
+}
+###
+
+GET {{endpoint}}/spaces?locationm=London
+###
+
+
+
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+    "location":"Manchester",
+    "name":"Best football team"
+}
